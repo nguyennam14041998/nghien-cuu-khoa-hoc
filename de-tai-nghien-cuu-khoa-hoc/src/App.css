@@ -1,0 +1,458 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.all{
+  font-size: 12px;
+}
+.all input{
+  font-size: 12px;
+}
+.all button{
+  font-size: 12px;
+}
+
+
+/*TOP*/
+.main-header{
+  background-color: rgb(10, 151, 216);
+  padding-top:10px;
+  padding-bottom: 10px;
+  
+
+}
+
+.top-title {
+  color: white;
+}
+
+
+
+
+
+
+/*Body-left*/
+
+
+.body-left{
+  margin-top: 20px;
+}
+
+.body-left table{
+  color: black;
+}
+.body-left table tr:hover{
+  background-color: rgb(252, 245, 245);
+}
+.body-left table tr td{
+  padding: 0px;
+}
+.body-left table tr td div{
+  padding: 12px;
+}
+.body-left table tr a{
+  text-decoration: none;
+}
+.body-left table tr td .fa{
+  padding: 16px;
+}
+.body-left a{
+  color: black;
+}
+.body-left td{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+/* Body-Right */
+
+.col-lg-10{
+  background-color:white;
+}
+
+.body-right{
+  background-color: rgb(252, 245, 245);
+}
+.body-right table{
+  margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* footer admin*/
+
+.footer-admin{
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: darkseagreen;
+}
+.footer-admin marquee{
+  color: blue;
+  font-size: 15px;
+}
+
+/* Quản lý đề tài */
+
+.search-select{
+  margin-top: 35px;
+  
+  
+}
+.search-select select{
+font-size: 12px;
+}
+.search-select label{
+  font-weight: bold;
+}
+.search-input{
+  margin-top: 30px;
+}
+.search-input label{
+  font-weight: bold;
+}
+.search-ma{
+  position: relative;
+}
+.search-ten{
+  position: relative;
+}
+.search-detai{
+  background-color: white;
+  border: 0px;
+  position:absolute;
+  top: 45%;
+  right: 0;
+}
+.fa-search{
+  font-size: 15px;
+}
+.table-detai{
+  margin-top: 30px;
+}
+.table-detai table tr th{
+  color: white;
+}
+.table-detai table tr td{
+  text-transform: capitalize;
+}
+.table-detai table tr:hover{
+  background-color: burlywood;
+}
+.pagination li a:hover{
+  background-color: rgb(91, 69, 235);
+  color: white;
+}
+
+.pagination li a{
+  color: black;
+}
+
+
+.index-admin h3{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.index-admin table{
+  margin-left: 50px;
+  
+  
+}
+
+.btn-search{
+  background-color: white;
+}
+.index-admin table button a{
+  color: white;
+  margin-left: 10px;
+  font-size: 13px;
+}
+#btnadd-BG{
+  
+  
+  font-size: 13px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+#btnadd-BG a{
+  color: white;
+  margin-left: 10px;
+}
+.index-admin table button i{
+  font-size: 13px;
+}
+#search-BG{
+ 
+  margin-left: 40px;
+  margin-bottom: 100px;
+}
+
+.add-BG h3{
+text-align: center;
+margin-top: 30px;
+margin-bottom: 20px;
+}
+.add-BG button{
+  margin-left: 10px;
+}
+.btn-group{
+  border: 0px;
+}
+.modal-controller{
+  font-size: 12px;
+  width: 200px;
+  height: 250px;
+  padding: 0;
+  margin-left: 700px;
+  margin-top: 330px;
+  border: 1px solid rgb(167, 145, 145);
+  background-color: rgb(245, 239, 230);
+}
+.modal-controller input{
+  font-size: 12px;
+}
+
+.modal-controller button{
+  font-size: 12px;
+  padding-left: 30px;
+  padding-right: 55px;
+}
+.modal-controller ul{
+  margin-top: 10px;
+}
+
+.modal-controller select{
+  font-size: 12px;
+}
+.modal-controller .btn-group{
+  margin-left: 20px;
+  
+}
+#select-detai table tr td select{
+  font-size: 12px;
+  width: 200px;
+}
+
+.modal-ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+.modal-ul li:hover{
+  background-color: blue;
+  color: white;
+  
+}
+
+.modal-ul li button:hover{
+  color: white;
+ 
+}
+
+
+/* quản lý đề tài / table / chi tiêt */
+
+.modal-chitiet{
+  font-size: 12px;
+  width: 1000px;
+  height: 550px;
+ 
+  margin-left: 200px;
+  margin-top: 50px;
+  border: 3px double rgb(161, 155, 155);
+  background-color: rgb(238, 227, 215);
+}
+.modal-chitiet input{
+  font-size: 12px;
+  text-decoration: transparent;
+}
+.modal-chitiet textarea{
+  font-size: 12px;
+  text-decoration: transparent;
+}
+
+.modal-chitiet button{
+  font-size: 12px;
+}
+.h4-chitiet{
+  width: 100%;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: rgb(86, 86, 231);
+  color: white;
+}
+.close-modal{
+  position: absolute;
+  top:20%;
+  right: 1%;
+  background-color: blue;
+}
+.close-modal i{
+font-size: 25px;
+color:white;
+}
+.chitiet{
+  margin-top: 20px;
+  padding: 10px;
+  
+}
+.chitiet label{
+  font-weight: bold;
+}
+
+/* quản lý đề tài / table / Cập nhật điểm */
+
+.modal-diem{
+  font-size: 12px;
+  width: 800px;
+  height: 550px;
+  padding: 0;
+  margin-left: 250px;
+  margin-top: 50px;
+  border: 3px double rgb(161, 155, 155);
+  background-color: rgb(238, 227, 215);
+}
+.modal-diem input{
+  font-size: 12px;
+  text-decoration: transparent;
+}
+.modal-diem button{
+  font-size: 12px;
+}
+.modal-diem table tr td label{
+  font-weight: bold;
+  font-size: 14px;
+}
+.modal-diem table tr td input{
+  width: 200px;
+  margin-left: 400px;
+}
+.modal-diem table tr td div{
+  margin-left: 400px;
+  margin-top: 30px;
+}
+.capnhatdiem{
+  padding: 10px;
+}
+/* quản lý đề tài / table / Cập đánh giá */
+
+.modal-danhgia{
+  font-size: 12px;
+  width: 500px;
+  height: 400px;
+  padding: 0;
+  margin-left: 380px;
+  margin-top: 50px;
+  border: 3px double rgb(161, 155, 155);
+  background-color: rgb(238, 227, 215);
+}
+.modal-danhgia input{
+  font-size: 12px;
+  text-decoration: transparent;
+}
+.modal-danhgia button{
+  font-size: 12px;
+}
+.modal-danhgia table tr td label{
+  font-weight: bold;
+  font-size: 14px;
+}
+.modal-danhgia table tr td input{
+  width: 200px;
+  margin-left: 400px;
+}
+.modal-danhgia table tr td div{
+  margin-left: 400px;
+  margin-top: 30px;
+}
+.radio{
+  padding: 10px;
+}
+
+/* Thêm đề tài */
+.button-top button{
+  background-color: whitesmoke;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.button-top button:hover{
+  color: white;
+  background-color: blue;
+}
+.add-input label{
+ font-weight: bold;
+}
+.add-input{
+  margin-top: 15px;
+  position: relative;
+}
+.add-input .fa-plus{
+  color: white;
+}
+.add-input button{
+  position: absolute;
+  right: 2%;
+  top: 45%;
+}
+.add-detai{
+  margin-top: 20px;
+}
+.add-detai button{
+  margin-right: 20px;
+}
+.title-search {
+  margin-top: 15px;
+  font-weight: bold;
+}
+.title-search i{
+  margin-right: 10px;
+  font-size: 15px;
+}
+.add-select{
+  margin-top: 15px;
+  
+  
+}
+.add-select select{
+font-size: 12px;
+}
+.add-select label{
+  font-weight: bold;
+}
+.search-add button{
+  margin-top: 22px;
+  margin-left: 20px;
+  
+}
+.search-add button i{
+  font-size: 25px;
+}
