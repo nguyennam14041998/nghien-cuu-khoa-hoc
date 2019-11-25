@@ -397,7 +397,14 @@ color:white;
 .radio{
   padding: 10px;
 }
-
+.danhgia{
+  position: relative;
+}
+.danhgia .btn-group{
+  position: absolute;
+  right: 5%;
+  
+}
 /* Thêm đề tài */
 .button-top button{
   background-color: whitesmoke;

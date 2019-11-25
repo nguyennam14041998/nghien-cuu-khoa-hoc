@@ -24,14 +24,14 @@ class Cap_nhat_diem extends Component{
            
         })
     }
-    handleChange = (event) => {
-        const target = event.target;
-        const value = target.value;
-        const name = target.name;
-        this.setState({
-          [name]: value
-        });
-      };
+    // handleChange = (event) => {
+    //     const target = event.target;
+    //     const value = target.value;
+    //     const name = target.name;
+    //     this.setState({
+    //       [name]: value
+    //     });
+    //   };
     render(){
         console.log(this.props.diem);
         return(
@@ -49,29 +49,30 @@ class Cap_nhat_diem extends Component{
                     </div>
                     <div className="capnhatdiem">
                     <table className="table table-hover">
+                        <tbody>
                         <tr>
                             <td><label>Tính khoa học</label></td>
-                            <td><input type="number" onChange={this.handleChange}  value={this.props.diem.khoahoc} className="form-control" name="D_tinhkhoahoc" id="D_tinhkhoahoc" /></td>
+                            <td><input type="number"   defaultValue={this.props.diem.khoahoc} className="form-control" name="D_tinhkhoahoc" id="D_tinhkhoahoc" /></td>
                         </tr>
                         <tr>
                             <td><label>Tính sáng tạo</label></td>
-                            <td><input type="number" value={this.props.diem.sangtao} onChange={this.handleChange} className="form-control" name="D_tinhsangtao" id="D_tinhsangtao" /></td>
+                            <td><input type="number" defaultValue={this.props.diem.sangtao}  className="form-control" name="D_tinhsangtao" id="D_tinhsangtao" /></td>
                         </tr>
                         <tr>
                             <td><label>Tính khả thi</label></td>
-                            <td><input type="number" value={this.props.diem.khathi} onChange={this.handleChange} className="form-control" name="D_tinhkhathi" id="D_tinhkhathi" /></td>
+                            <td><input type="number" defaultValue={this.props.diem.khathi}  className="form-control" name="D_tinhkhathi" id="D_tinhkhathi" /></td>
                         </tr>
                         <tr>
                             <td><label>Tính kỹ thuật cao</label></td>
-                            <td><input type="number" value={this.props.diem.kythuatcao} onChange={this.handleChange} className="form-control" name="D_tinhkythuatcao" id="D_tinhkythuatcao" /></td>
+                            <td><input type="number" defaultValue={this.props.diem.kythuatcao}  className="form-control" name="D_tinhkythuatcao" id="D_tinhkythuatcao" /></td>
                         </tr>
                         <tr>
                             <td><label>Tính thực tiễn</label></td>
-                            <td><input type="number" value={this.props.diem.thuctien} onChange={this.handleChange} className="form-control" name="D_tinhthuctien" id="D_tinhthuctien" /></td>
+                            <td><input type="number" defaultValue={this.props.diem.thuctien}  className="form-control" name="D_tinhthuctien" id="D_tinhthuctien" /></td>
                         </tr>
                         <tr>
                             <td><label style={{color:'blue'}}>TỔNG ĐIỂM</label></td>
-                            <td><input type="number" value={this.props.diem.tongdiem}  className="form-control" name="D_tongdiem" id="D_tongdiem" /></td>
+                            <td><input type="number" defaultValue={this.props.diem.tongdiem} readOnly  className="form-control" name="D_tongdiem" id="D_tongdiem" /></td>
                         </tr>
                         <tr>
                             <td></td>
@@ -80,6 +81,7 @@ class Cap_nhat_diem extends Component{
                                 <button className="btn btn-danger" onClick={()=>this.closeDiemModal()}><i className="fa fa-close"></i><span> Hủy</span></button>
                                 </div></td>
                         </tr>
+                        </tbody>
                     </table>
                     
                 </div>

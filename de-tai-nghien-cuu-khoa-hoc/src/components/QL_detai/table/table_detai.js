@@ -8,8 +8,7 @@ class Table extends Component{
     
    
     popupopen =()=>{
-       console.log(this.props.name);
-       console.log(this.props.diem);
+       
             return(
                 <tr>
                 <td>{this.props.name.stt}</td>
@@ -30,15 +29,17 @@ class Table extends Component{
         
     }
     render(){
+        console.log(this.props.name);
+        console.log(this.props.diem);
         return(
             <div className="table-detai">
             <table className="table table-hover table-bordered">
-            <thead>
+            <tbody>
             <tr className="bg-primary">
                 <th colSpan="13">Thông tin chi tiết</th>
             </tr>
-            </thead>
-            <tbody>
+            
+           
             <tr>
                 <td>STT</td>
                 <td>Mã phiếu</td>
@@ -55,20 +56,19 @@ class Table extends Component{
                 <td>Tệp đính kèm</td>
             </tr>
            
-            <Popup trigger={ this.popupopen()    } >
-            
-                     <ul className="modal-ul" >
-                     <Thong_tin_ct ten={this.props.name}  />
-                      <li><button className="btn"  style={{paddingRight:'96px'}}><i className="fa fa-edit"></i><span> Yêu cầu sửa</span></button></li>
-                     <Cap_nhat_diem diem={this.props.diem} />
-                      <li><button className="btn" style={{paddingRight:'64px'}}><i className="fa fa-line-chart"></i><span> Tiến độ thực hiện</span></button></li>
-                      <Cap_nhat_danh_gia />
-                      <li><button className="btn" style={{paddingRight:'82px'}}><i className="fa fa-print"></i><span> In phiếu (F9)</span></button></li>
-                      
-                  </ul>
-          
-           
-            
+            <Popup  trigger={ this.popupopen()}  >
+               
+                <ul className="modal-ul" >
+                <Thong_tin_ct ten={this.props.name}   />
+                 <li><button   className="btn"  style={{paddingRight:'96px'}}><i className="fa fa-edit"></i><span> Yêu cầu sửa</span></button></li>
+                <Cap_nhat_diem diem={this.props.diem} />
+                 <li><button className="btn" style={{paddingRight:'64px'}}><i className="fa fa-line-chart"></i><span> Tiến độ thực hiện</span></button></li>
+                 <Cap_nhat_danh_gia  />
+                 <li><button className="btn" style={{paddingRight:'82px'}}><i className="fa fa-print"></i><span> In phiếu (F9)</span></button></li>
+                 
+             </ul>
+               
+                     
             </Popup>
             <tr>
                 <td></td>

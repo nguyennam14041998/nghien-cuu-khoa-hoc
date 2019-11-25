@@ -7,7 +7,13 @@ import Search_input from './search_input';
 import Chuyentrang from './chuyentrang_detai';
 
 class Index extends Component{
-    
+    constructor(props){
+        super(props);
+        this.state={
+            index:[],
+            diem:[]
+        }
+    }
     
          index=
         {
@@ -40,13 +46,18 @@ class Index extends Component{
             thuctien:"5",
             tongdiem:"25",
         }
-       
+        table=()=>{
+            return(
+                <Table name={this.index} diem={this.diem} />
+            )
+        }
+
     render(){
         return(
             <div className="col-lg-10">
                 <Search_select />
                 <Search_input />
-                <Table name={this.index} diem={this.diem} />
+                {this.table()}
                 <Chuyentrang />
                 
             </div>

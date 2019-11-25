@@ -3,7 +3,7 @@ import Modal from 'react-modal';
 import Table_add from './table_add';
 import Add_detai from './add_detai';
 import Search_add from './search_add';
-import Dutoan from './dutoan_add';
+import Dutoan from './dutoan/dutoan_add';
 import Chuyentrang from './chuyentrang_add';
 
 class Add extends Component{
